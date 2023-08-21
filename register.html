@@ -1,0 +1,86 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: rgb(210, 219, 227);  
+  outline: none;  
+}  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+
+.savebtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.savebtn:hover {  
+  opacity: 1;  
+}  
+
+.canclebtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.canclebtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Register From</h1> </center>  
+  <hr>  
+  <label> Name </label>   
+<input type="text" name="Name" placeholder= "Name" size="15" required />   
+<label> Age :</label>  
+<input type="text" name="Age" placeholder="Age"required/>   
+<label>Gender :</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+<label> Contact :</label>  
+<input type="text" name="Contact" placeholder="contact no." size="10"/ required>   
+<label>Address:</label>
+<textarea cols="2" rows="2" placeholder=" Address" value="Address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="Email" required>  
+  
+    <button type="submit" class="savebtn">Save</button>    
+    <button type="submit" class="canclebtn">Cancle</button>
+</form>  
+</body>  
+</html>  
